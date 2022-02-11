@@ -18,3 +18,8 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--bg-secondary-color);
 }
+
+#root {
+  width: 100%;
+  height: 100%;
+}
