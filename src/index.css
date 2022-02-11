@@ -1,3 +1,8 @@
+:root {
+  --bg-primary-color: #b3dec4;
+  --bg-secondary-color: #d5e2da;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +11,5 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-secondary-color);
 }
