@@ -1,9 +1,11 @@
 import './App.css';
 
+import Login from './forms/Login';
+
 function App() {
   return (
     <div className="App">
-      <h1>Olá</h1>
+      <Login></Login>
     </div>
   );
 }
