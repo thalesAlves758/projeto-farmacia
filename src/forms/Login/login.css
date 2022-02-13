@@ -1,0 +1,16 @@
+.title-container {
+    display: flex;
+    color: #fff;
+}
+
+.links-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-size: 0.7em;
+    color: #000;
+}
