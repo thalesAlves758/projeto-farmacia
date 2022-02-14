@@ -14,3 +14,12 @@
     font-size: 0.7em;
     color: #000;
 }
+
+.container {
+    width: 25vw;
+}
+
+.button-container {
+    margin: 10px 0;
+    width: 100%;
+}
