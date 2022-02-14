@@ -9,22 +9,8 @@ import {
 } from '@mui/icons-material';
 
 const Login = () => {
-    const boxStyle = {
-        bgcolor: '#b3dec4',
-        padding: '20px',
-        width: '25vw',
-        borderRadius: '10px',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-    };
-
-    const buttonStyle = {
-        margin: '10px 0'
-    };
-
     return (
-        <Box component="form" sx={boxStyle}>
+        <Box className='container' component="form">
             <div className='title-container'>
                 <LockOpenIcon fontSize='large' />
                 <h1>Login</h1>
@@ -64,7 +50,9 @@ const Login = () => {
                 variant='standard'
             />
 
-            <Button fullWidth sx={buttonStyle} variant="contained" color='success' type='submit'>Entrar</Button>
+            <div className="button-container">
+                <Button fullWidth variant="contained" color='success' type='submit'>Entrar</Button>
+            </div>
 
             <div className='links-container'>
                 <Link href='#' className='link' color='#000'>Esqueci a senha</Link>
