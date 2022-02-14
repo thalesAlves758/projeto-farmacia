@@ -1,3 +1,11 @@
+.container {
+    width: 25vw;
+}
+
+.container form {
+    width: 100%;
+}
+
 .title-container {
     display: flex;
     color: #fff;
@@ -13,10 +21,6 @@
 .link {
     font-size: 0.7em;
     color: #000;
-}
-
-.container {
-    width: 25vw;
 }
 
 .button-container {
