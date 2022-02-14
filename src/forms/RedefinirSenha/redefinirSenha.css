@@ -1,0 +1,21 @@
+.container {
+    width: 30vw;
+}
+
+.container form {
+    width: 100%;
+}
+
+.text-container {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.text-container h2 {
+    font-size: 1.2em;
+    margin-bottom: 7px;
+}
+
+.text-container p {
+    font-size: 0.9em;
+}
