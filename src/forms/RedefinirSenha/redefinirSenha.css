@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.title-container {
+    display: flex;
+    color: #fff;
+}
+
 .text-container {
     text-align: center;
     margin: 5px 0;
