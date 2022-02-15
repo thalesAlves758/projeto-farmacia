@@ -1,33 +1,36 @@
-import './login.css';
-
 import React from 'react';
-import { Button, TextField, InputAdornment, Link } from '@mui/material';
+import { Button, TextField, InputAdornment } from '@mui/material';
 import {
-    Email as EmailIcon,
-    LockOpen as LockOpenIcon,
-    VpnKey as VpnKeyIcon
+    VpnKey as VpnKeyIcon,
+    ManageAccounts as ManageAccountsIcon
 } from '@mui/icons-material';
 
-const Login = () => {
+import './definirNovaSenha.css';
+
+const DefinirNovaSenha = () => {
     return (
         <div className='container'>
             <div className='title-container'>
-                <LockOpenIcon fontSize='large' />
-                <h1>Login</h1>
+                <ManageAccountsIcon className='title-icon' fontSize='large' />
+                <h1>Redefinir Senha</h1>
+            </div>
+
+            <div className='text-container'>
+                <h2>Insira abaixo sua nova senha</h2>
             </div>
 
             <form>
                 <TextField
-                    id='email-input'
-                    name='email'
+                    id='senha-input'
+                    name='senha'
                     fullWidth
                     margin='normal'
-                    placeholder='E-mail'
-                    type="email"
+                    placeholder='Nova senha'
+                    type="password"
                     InputProps={{
                         startAdornment: (
                             <InputAdornment position="start">
-                                <EmailIcon />
+                                <VpnKeyIcon />
                             </InputAdornment>
                         ),
                     }}
@@ -39,7 +42,7 @@ const Login = () => {
                     name='senha'
                     fullWidth
                     margin='normal'
-                    placeholder='Senha'
+                    placeholder='Confirmar nova senha'
                     type="password"
                     InputProps={{
                         startAdornment: (
@@ -52,16 +55,11 @@ const Login = () => {
                 />
 
                 <div className="button-container">
-                    <Button fullWidth variant="contained" color='success' type='submit'>Entrar</Button>
+                    <Button fullWidth variant="contained" color='success' type='submit'>Enviar</Button>
                 </div>
             </form>
-
-            <div className='links-container'>
-                <Link href='#' className='link' color='#000'>Esqueci a senha</Link>
-                <Link href='#' className='link' color='#000'>Quero me cadastrar</Link>
-            </div>
         </div>
     );
 }
-
-export default Login;
+ 
+export default DefinirNovaSenha;

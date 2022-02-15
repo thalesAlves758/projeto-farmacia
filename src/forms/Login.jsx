@@ -1,36 +1,33 @@
-import './definirNovaSenha.css';
-
 import React from 'react';
-import { Button, TextField, InputAdornment } from '@mui/material';
+import { Button, TextField, InputAdornment, Link } from '@mui/material';
 import {
-    VpnKey as VpnKeyIcon,
-    ManageAccounts as ManageAccountsIcon
+    Email as EmailIcon,
+    LockOpen as LockOpenIcon,
+    VpnKey as VpnKeyIcon
 } from '@mui/icons-material';
 
-const DefinirNovaSenha = () => {
+import './login.css';
+
+const Login = () => {
     return (
         <div className='container'>
             <div className='title-container'>
-                <ManageAccountsIcon className='title-icon' fontSize='large' />
-                <h1>Redefinir Senha</h1>
-            </div>
-
-            <div className='text-container'>
-                <h2>Insira abaixo sua nova senha</h2>
+                <LockOpenIcon fontSize='large' />
+                <h1>Login</h1>
             </div>
 
             <form>
                 <TextField
-                    id='senha-input'
-                    name='senha'
+                    id='email-input'
+                    name='email'
                     fullWidth
                     margin='normal'
-                    placeholder='Nova senha'
-                    type="password"
+                    placeholder='E-mail'
+                    type="email"
                     InputProps={{
                         startAdornment: (
                             <InputAdornment position="start">
-                                <VpnKeyIcon />
+                                <EmailIcon />
                             </InputAdornment>
                         ),
                     }}
@@ -42,7 +39,7 @@ const DefinirNovaSenha = () => {
                     name='senha'
                     fullWidth
                     margin='normal'
-                    placeholder='Confirmar nova senha'
+                    placeholder='Senha'
                     type="password"
                     InputProps={{
                         startAdornment: (
@@ -55,11 +52,16 @@ const DefinirNovaSenha = () => {
                 />
 
                 <div className="button-container">
-                    <Button fullWidth variant="contained" color='success' type='submit'>Enviar</Button>
+                    <Button fullWidth variant="contained" color='success' type='submit'>Entrar</Button>
                 </div>
             </form>
+
+            <div className='links-container'>
+                <Link href='#' className='link' color='#000'>Esqueci a senha</Link>
+                <Link href='#' className='link' color='#000'>Quero me cadastrar</Link>
+            </div>
         </div>
     );
 }
- 
-export default DefinirNovaSenha;
+
+export default Login;

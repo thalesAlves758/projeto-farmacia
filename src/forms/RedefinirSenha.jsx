@@ -1,11 +1,11 @@
-import './redefinirSenha.css';
-
 import React from 'react';
 import { Button, TextField, InputAdornment } from '@mui/material';
 import {
     Email as EmailIcon,
     ManageAccounts as ManageAccountsIcon
 } from '@mui/icons-material';
+
+import './redefinirSenha.css';
 
 const RedefinirSenha = () => {
     return (
