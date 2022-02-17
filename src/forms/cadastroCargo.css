@@ -1,0 +1,49 @@
+.container {
+    width: 75vw;
+}
+
+.title-container {
+    color: #000;
+}
+
+.container h3 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.container form {
+    width: 100%;
+}
+
+.input-text {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.permissoes-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.cargo-checkbox-group {
+    border: 5px solid #fff;
+    width: 30%;
+    padding: 12px;
+}
+
+.cargo-checkbox-group h2 {
+    text-align: center;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-around;
+}
