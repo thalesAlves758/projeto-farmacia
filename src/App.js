@@ -1,13 +1,17 @@
 import './App.css';
 
 import Login from './forms/Login';
-import RedefinirSenha from './forms/RedefinirSenha';
+// import RedefinirSenha from './forms/RedefinirSenha';
+// import DefinirNovaSenha from './forms/DefinirNovaSenha';
+// import CadastroCargo from './forms/CadastroCargo';
 
 function App() {
   return (
     <div className="App">
-      {/* <Login></Login> */}
-      <RedefinirSenha></RedefinirSenha>
+      <Login />
+      {/* <RedefinirSenha /> */}
+      {/* <DefinirNovaSenha /> */}
+      {/* <CadastroCargo /> */}
     </div>
   );
 }
